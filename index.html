@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strongest Cartoon Characters</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Main Background */
+    body {
+      background-color: #f0f8ff; /* Light blue */
+      color: #333;
+    }
+    /* Header Section */
+    .header {
+      background-color: darkred; /* OrangeRed */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    /* Table Container */
+    .table-container {
+      margin: 20px auto;
+      max-width: 90%;
+    }
+    /* Table Row Colors */
+    .bg-light-red {
+      background-color: #ffccd5; /* Light Pink */
+    }
+    .bg-light-yellow {
+      background-color: #fff9c4; /* Light Yellow */
+    }
+    .bg-light-blue {
+      background-color: #cce5ff; /* Light Sky Blue */
+    }
+    /* Character Image */
+    .character-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      border: 3px solid #ffb400; /* Gold border */
+      cursor: pointer;
+    }
+    /* Tooltip Styling */
+    .tooltip-inner {
+      background-color: #ffa07a; /* Light Salmon */
+      color: #fff;
+    }
+    .tooltip-arrow::before {
+      border-top-color: #ffa07a;
+    }
+    /* Modal Header Colors */
+    .modal-header {
+      background-color: #f08080; /* Light Coral */
+      color: #fff;
+    }
+    /* Modal Body Text */
+    .modal-body {
+      color: #333;
+      font-size: 1rem;
+    }
+    /* List Item Colors for Abilities */
+    .ability-list li {
+      color: #333;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .ability-list li:nth-child(odd) {
+      color: #5a5acd; /* Soft Blue */
+    }
+    .ability-list li:nth-child(even) {
+      color: #ff6347; /* Tomato */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Top 3 Strongest Justice League (DCU) Heroes</h1>
+  </header>
+  
+  <div class="container table-container">
+    <table class="table table-bordered">
+      <thead class="table-danger">
+        <tr>
+          <th scope="col">Image</th>
+          <th scope="col">Info</th>
+          <th scope="col">Abilities</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-light-red">
+          <td class="text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png" alt="Superman" class="character-image" data-bs-toggle="modal" data-bs-target="#character1Modal">
+          </td>
+          <td>
+            <strong>Name:</strong> 1.) Superman<br>
+            <strong>Background:</strong> born on the planet Krypton. Originally named Kal-El, he was sent to Earth as a baby when his parents realized their planet was dying.<br>
+            <strong>Description:</strong> He can fly, lift heavy objects, use heat vision, move extraordinarily fast, and freeze objects with his breath. He has even displayed the ability to release heat energy from all over his body in a gigantic solar flare. His body is also durable to the point that not even a nuclear bomb can kill him.
+          </td>
+          <td>
+            <ul class="ability-list">
+              <li data-bs-toggle="tooltip" title="Incredible power and endurance, magical powers.">Superhuman Everything!!! 
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="bg-light-yellow">
+          <td class="text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Shazam_Captain_Marvel.png" alt="Shazam" class="character-image" data-bs-toggle="modal" data-bs-target="#character2Modal">
+          </td>
+          <td>
+            <strong>Name:</strong> 2.) Shazam<br>
+            <strong>Background:</strong> After being empowered by the wizard Shazam, Billy Batson was able to reach his full potential by saying his name and transforming into a champion of the gods.<br>
+            <strong>Description:</strong> With the wisdom of Solomon, the strength of Hercules, the stamina of Atlas, the power of Zeus, the courage of Achilles, and the speed of Mercury.
+          </td>
+          <td>
+            <ul class="ability-list">
+              <li data-bs-toggle="tooltip" title="Superhuman Strength, intelligence, stamina, courage, speed, and power.">Superhuman everything!</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="bg-light-blue">
+          <td class="text-center">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/34/Martian_Manhunter_Alex_Ross.png" alt="Martian Manhunter" class="character-image" data-bs-toggle="modal" data-bs-target="#character3Modal">
+          </td>
+          <td>
+            <strong>Name:</strong> 3.) Martian Manhunter<br>
+            <strong>Background:</strong> An alien hailing from the planet Mars who came to Earth and became a crimefighter while assuming a human identity.<br>
+            <strong>Description:</strong> Able to knock Shazam out cold, move the Earth out of its orbit with Superman and Wonder Woman, and destroy the Moon.
+          </td>
+          <td>
+            <ul class="ability-list">
+              <li data-bs-toggle="tooltip" title="Can go invisible at will.">Invisibility </li>
+              <li data-bs-toggle="tooltip" title="Can fly at will.">Flight</li>
+              <li data-bs-toggle="tooltip" title="Can shapeshift to any being">Shapeshifting</li>
+               <li data-bs-toggle="tooltip" title="Can control objects at will.">Telekinesis  </li>
+              <li data-bs-toggle="tooltip" title="Phase through the toughest of material.">Phasing through solid objects</li>
+              <li data-bs-toggle="tooltip" title="Can regenerate from life-threatening wounds easily.">Regeneration</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Character Modals -->
+  <div class="modal fade" id="character1Modal" tabindex="-1" aria-labelledby="character1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="character1ModalLabel">Character 1 Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Detailed information about Character 1, including abilities, backstory, notable achievements, and unique traits.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="character2Modal" tabindex="-1" aria-labelledby="character2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="character2ModalLabel">Character 2 Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Detailed information about Character 2, including origin story, powers, famous battles, and other key details.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="character3Modal" tabindex="-1" aria-labelledby="character3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="character3ModalLabel">Character 3 Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Detailed background and insights into Character 3’s unique abilities, history, and role in their respective universe.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Initialize Bootstrap tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
+</body>
+</html>
